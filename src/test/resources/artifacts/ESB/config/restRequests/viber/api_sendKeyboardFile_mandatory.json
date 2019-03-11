@@ -1,0 +1,13 @@
+{
+  "receiver": "%s(user1)",
+  "type": "file",
+  "media": "%s(mediaUrlFile)",
+  "size": "%s(size)",
+  "file_name": "%s(fileName)",
+  "keyboard": {
+    "Type": "keyboard",
+    "Buttons": [
+      %s(buttons)
+  ]
+  }
+}

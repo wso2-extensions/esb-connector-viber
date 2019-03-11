@@ -1,0 +1,14 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "contact",
+  "contact": {
+    "name": "%s(contactName)",
+    "phone_number": "%s(contactNumber)"
+  },
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

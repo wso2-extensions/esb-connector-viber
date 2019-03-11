@@ -1,0 +1,11 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "sticker",
+  "sticker_id": "%s(stickerId)",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

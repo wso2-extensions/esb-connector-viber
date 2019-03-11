@@ -1,0 +1,14 @@
+{
+  "receiver": "%s(user1)",
+  "type": "contact",
+  "contact": {
+    "name": "%s(contactName)",
+    "phone_number": "%s(contactNumber)"
+  },
+  "keyboard": {
+    "Type": "keyboard",
+    "Buttons": [
+      %s(buttons)
+  ]
+  }
+}

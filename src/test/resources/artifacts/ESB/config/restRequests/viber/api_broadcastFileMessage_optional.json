@@ -1,0 +1,16 @@
+{
+  "sender": {
+    "name": "%s(senderName)",
+    "avatar": "%s(senderAvatarUrl)"
+  },
+  "type": "file",
+  "media": "%s(mediaUrlFile)",
+  "size": "%s(fileSize)",
+  "file_name": "%s(fileName)",
+  "min_api_version": "%s(minApiVersion)",
+  "tracking_data": "%s(trackingData)",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

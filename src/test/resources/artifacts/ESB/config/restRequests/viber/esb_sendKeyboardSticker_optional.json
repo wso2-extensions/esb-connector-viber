@@ -1,0 +1,13 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver": "%s(user1)",
+  "type": "sticker",
+  "stickerId": "%s(stickerId)",
+  "bgColor": "%s(bgColor)",
+  "defaultHeight": "%s(defaultHeight)",
+  "customDefaultHeigh": "%s(customDefaultHeigh)",
+  "buttons": [
+    %s(buttons)
+]
+}

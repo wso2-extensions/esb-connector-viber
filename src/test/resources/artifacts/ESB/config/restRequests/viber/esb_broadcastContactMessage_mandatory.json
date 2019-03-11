@@ -1,0 +1,12 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "senderName": "%s(senderName)",
+  "type": "contact",
+  "contactName": "%s(contactName)",
+  "contactNumber": "%s(contactNumber)",
+  "ids": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

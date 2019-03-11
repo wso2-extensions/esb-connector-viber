@@ -1,0 +1,13 @@
+{
+  "receiver": "%s(user1)",
+  "min_api_version": "%s(minApiVersion)",
+  "type": "contact",
+  "sender": {
+    "name": "%s(senderName)",
+    "avatar": "%s(senderAvatarUrl)"
+  },
+  "tracking_data": "%s(trackingData)",
+  "contact": {
+    "name": "%s(contactName)"
+  }
+}

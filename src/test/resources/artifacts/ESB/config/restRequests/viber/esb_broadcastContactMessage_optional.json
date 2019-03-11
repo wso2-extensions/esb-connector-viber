@@ -1,0 +1,15 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "senderName": "%s(senderName)",
+  "senderAvatarUrl": "%s(senderAvatarUrl)",
+  "type": "contact",
+  "contactName": "%s(contactName)",
+  "contactNumber": "%s(contactNumber)",
+  "trackingData": "%s(trackingData)",
+  "minApiVersion": "%s(minApiVersion)",
+  "ids": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

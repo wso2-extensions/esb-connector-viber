@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ you may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="broadcastCarouselContentMessage">
+    <parameter name="senderName" description="Sender's name"/>
+    <parameter name="ids" description="Unique viber user id"/>
+    <parameter name="type" description="Type of the message"/>
+    <parameter name="richMediaButtons" description="Array of button"/>
+    <parameter name="backGroundColor" description="Color of the background"/>
+    <parameter name="buttonsGroupRows" description="Number of rows per carousel content block"/>
+    <parameter name="buttonsGroupColumns" description="Number of columns per carousel content block"/>
+    <sequence>
+        <property name="uri.var.senderName" expression="$func:senderName"/>
+        <property name="uri.var.ids" expression="$func:ids"/>
+        <property name="uri.var.type" expression="$func:type"/>
+        <property name="uri.var.richMediaButtons" expression="$func:richMediaButtons"/>
+        <property name="uri.var.backGroundColor" expression="$func:backGroundColor"/>
+        <property name="uri.var.buttonsGroupRows" expression="$func:buttonsGroupRows"/>
+        <property name="uri.var.buttonsGroupColumns" expression="$func:buttonsGroupColumns"/>
+        <payloadFactory media-type="json">
+            <format>
+                {
+                "sender":{
+                "name":"$1"
+                },
+                "type":"$2",
+                "min_api_version":2,
+                "rich_media":{
+                "Type":"rich_media",
+                "Buttons":$3
+                },
+                "broadcast_list":$4
+                }
+            </format>
+            <args>
+                <arg expression="$.senderName" evaluator="json"/>
+                <arg expression="$.type" evaluator="json"/>
+                <arg expression="$.richMediaButtons" evaluator="json"/>
+                <arg expression="$.ids" evaluator="json"/>
+            </args>
+        </payloadFactory>
+        <script language="js">
+            <![CDATA[
+            var payload = mc.getPayloadJSON();
+            var backGroundColor = mc.getProperty('uri.var.backGroundColor');
+            var buttonsGroupRows = mc.getProperty('uri.var.buttonsGroupRows');
+            var buttonsGroupColumns = mc.getProperty('uri.var.buttonsGroupColumns');
+
+            if ( backGroundColor != null && backGroundColor != "") {
+            payload.rich_media.BgColor = backGroundColor;
+            }
+
+            if ( buttonsGroupRows != null && buttonsGroupRows != "") {
+            payload.rich_media.ButtonsGroupRows = buttonsGroupRows;
+            }
+
+            if ( buttonsGroupColumns != null && buttonsGroupColumns != "") {
+            payload.rich_media.ButtonsGroupColumns = buttonsGroupColumns;
+            }
+
+            mc.setPayloadJSON(payload);
+        ]]>
+        </script>
+        <call>
+            <endpoint>
+                <http method="POST"
+                      uri-template="{uri.var.apiUrl}/pa/broadcast_message"/>
+            </endpoint>
+        </call>
+    </sequence>
+</template>

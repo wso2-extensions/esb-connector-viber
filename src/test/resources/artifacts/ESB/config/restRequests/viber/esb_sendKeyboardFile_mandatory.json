@@ -1,0 +1,12 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver":"%s(user1)",
+  "type": "file",
+  "mediaUrlFile": "%s(mediaUrlFile)",
+  "size": "%s(fileSize)",
+  "fileName": "%s(fileName)",
+  "buttons": [
+    %s(buttons)
+]
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ you may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="broadcastVideoMessage">
+    <parameter name="senderName" description="The sender's name to display"/>
+    <parameter name="ids" description="Unique viber user ids"/>
+    <parameter name="type" description="Message type"/>
+    <parameter name="mediaUrlVideo" description="url of the video"/>
+    <parameter name="size" description="Size of the video"/>
+    <parameter name="senderAvatarUrl" description="The sender’s avatar URL"/>
+    <parameter name="trackingData" description="Allow the account to track messages and user’s replies"/>
+    <parameter name="minApiVersion" description="Minimal API version required by clients for this message"/>
+    <parameter name="thumbnailUrl" description="URL of a reduced size image "/>
+    <parameter name="duration" description="Duration of the video"/>
+    <sequence>
+        <property name="uri.var.senderName" expression="$func:senderName"/>
+        <property name="uri.var.ids" expression="$func:ids"/>
+        <property name="uri.var.type" expression="$func:type"/>
+        <property name="uri.var.mediaUrlVideo" expression="$func:mediaUrlVideo"/>
+        <property name="uri.var.size" expression="$func:size"/>
+        <property name="uri.var.senderAvatarUrl" expression="$func:senderAvatarUrl"/>
+        <property name="uri.var.trackingData" expression="$func:trackingData"/>
+        <property name="uri.var.minApiVersion" expression="$func:minApiVersion"/>
+        <property name="uri.var.thumbnailUrl" expression="$func:thumbnailUrl"/>
+        <property name="uri.var.duration" expression="$func:duration"/>
+        <payloadFactory media-type="json">
+            <format>
+                {
+                "sender":{
+                "name":"$1"
+                },
+                "type":"$2",
+                "media":"$3",
+                "size":$4,
+                "broadcast_list":$5
+                }
+            </format>
+            <args>
+                <arg expression="$.senderName" evaluator="json"/>
+                <arg expression="$.type" evaluator="json"/>
+                <arg expression="$.mediaUrlVideo" evaluator="json"/>
+                <arg expression="$.size" evaluator="json"/>
+                <arg expression="$.ids" evaluator="json"/>
+            </args>
+        </payloadFactory>
+        <script language="js">
+            <![CDATA[
+            payload = mc.getPayloadJSON();
+            var senderAvatarUrl = mc.getProperty("uri.var.senderAvatarUrl");
+            var trackingData = mc.getProperty("uri.var.trackingData");
+            var minApiVersion = mc.getProperty("uri.var.minApiVersion");
+            var thumbnailUrl = mc.getProperty("uri.var.thumbnailUrl");
+            var duration = mc.getProperty("uri.var.duration");
+
+            if ( senderAvatarUrl != null && senderAvatarUrl != "") {
+            payload.sender.avatar = senderAvatarUrl;
+            }
+
+            if( trackingData != null && trackingData != ""){
+            payload.tracking_data = trackingData;
+            }
+
+            if( minApiVersion != null && minApiVersion != ""){
+            payload.min_api_version = minApiVersion;
+            }
+
+            if( thumbnailUrl != null && thumbnailUrl != ""){
+            payload.thumbnail = thumbnailUrl;
+            }
+
+            if( duration != null && duration != ""){
+            payload.duration = duration;
+            }
+            mc.setPayloadJSON(payload);
+            ]]>
+        </script>
+        <call>
+            <endpoint>
+                <http method="POST"
+                      uri-template="{uri.var.apiUrl}/pa/broadcast_message"/>
+            </endpoint>
+        </call>
+    </sequence>
+</template>

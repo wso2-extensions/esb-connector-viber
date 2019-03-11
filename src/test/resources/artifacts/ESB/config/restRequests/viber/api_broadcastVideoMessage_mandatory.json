@@ -1,0 +1,12 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "video",
+  "media": "%s(mediaUrlVideo)",
+  "size": "%s(size)",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

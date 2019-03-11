@@ -1,0 +1,19 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "min_api_version": 2,
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ],
+  "rich_media": {
+    "BgColor": "%s(backGroundColor)",
+    "ButtonsGroupRows": "%s(buttonsGroupRows)",
+    "ButtonsGroupColumns": "%s(buttonsGroupColumns)",
+    "Type": "rich_media",
+    "Buttons": [
+      %s(richMediaButtons)
+  ]
+  }
+}

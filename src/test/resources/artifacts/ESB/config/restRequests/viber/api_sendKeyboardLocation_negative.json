@@ -1,0 +1,16 @@
+{
+  "receiver": "%s(user1)",
+  "location": {
+    "lat": "%s(latitude)",
+    "lon": "%s(longitude)"
+  },
+  "keyboard": {
+    "Type": "keyboard",
+    "BgColor": "%s(bgColor)",
+    "DefaultHeight": "%s(defaultHeight)",
+    "CustomDefaultHeigh": "%s(customDefaultHeigh)",
+    "Buttons": [
+      %s(buttons)
+  ]
+  }
+}

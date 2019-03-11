@@ -1,0 +1,13 @@
+{
+  "sender": {
+    "name": "%s(senderName)",
+    "avatar": "%s(senderAvatarUrl)"
+  },
+  "type": "video",
+  "media": "%s(mediaUrlVideo)",
+  "size": "%s(size)",
+  "thumbnail": "%s(thumbnailUrl)",
+  "duration": "%s(duration)",
+  "tracking_data": "%s(trackingData)",
+  "min_api_version": "%s(minApiVersion)"
+}

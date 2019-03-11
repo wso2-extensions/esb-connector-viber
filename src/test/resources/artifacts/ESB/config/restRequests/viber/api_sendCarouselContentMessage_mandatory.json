@@ -1,0 +1,11 @@
+{
+  "receiver": "%s(user1)",
+  "type": "rich_media",
+  "min_api_version": 2,
+  "rich_media": {
+    "type": "rich_media",
+    "Buttons": [
+      %s(richMediaButtons)
+  ]
+  }
+}

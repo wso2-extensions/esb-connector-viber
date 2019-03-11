@@ -1,0 +1,13 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver": "%s(user1)",
+  "bgColor": "%s(bgColor)",
+  "defaultHeight": "%s(defaultHeight)",
+  "customDefaultHeigh": "%s(customDefaultHeigh)",
+  "latitude": "%s(latitude)",
+  "longitude": "%s(longitude)",
+  "buttons": [
+    %s(buttons)
+]
+}

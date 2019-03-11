@@ -1,0 +1,12 @@
+{
+  "receiver":"%s(user1)",
+  "min_api_version": "%s(minApiVersion)",
+  "sender": {
+    "avatar": "%s(senderAvatarUrl)"
+  },
+  "tracking_data": "%s(trackingData)",
+  "type": "picture",
+  "media": "%s(mediaUrlPicture)",
+  "text": "%s(pictureText)",
+  "thumbnail": "%s(thumbnailUrl)"
+}

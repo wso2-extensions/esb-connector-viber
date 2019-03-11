@@ -1,0 +1,13 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "senderName": "%s(senderName)",
+  "ids": [
+    "%s(user1)",
+    "%s(user2)"
+  ],
+  "type": "rich_media",
+  "richMediaButtons": [
+    %s(richMediaButtons)
+]
+}

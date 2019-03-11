@@ -1,0 +1,11 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "text",
+  "text": "%s(text)",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

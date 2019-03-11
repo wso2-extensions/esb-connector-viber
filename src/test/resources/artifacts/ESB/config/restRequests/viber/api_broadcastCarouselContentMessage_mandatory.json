@@ -1,0 +1,17 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "min_api_version": 2,
+  "type": "rich_media",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ],
+  "rich_media": {
+    "Type": "rich_media",
+    "Buttons": [
+      %s(richMediaButtons)
+  ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver": "%s(user1)",
+  "senderName": "%s(senderName)",
+  "type": "video",
+  "mediaUrlVideo": "%s(mediaUrlVideo)",
+  "size": "%s(size)",
+  "senderAvatarUrl": "%s(senderAvatarUrl)",
+  "trackingData": "%s(trackingData)",
+  "minApiVersion": "%s(minApiVersion)",
+  "thumbnailUrl": "%s(thumbnailUrl)",
+  "duration": "%s(duration)"
+}
