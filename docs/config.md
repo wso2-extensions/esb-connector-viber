@@ -13,8 +13,6 @@
     i) when a user sends it's first message to public account the user will be automatically subscribed to the account.
    
     ii) By pressing the subscribe button user can subscribed to the account.
-  
- By running accountInfo method you can derive the user's id who are subscribed to the public account and user's name, admin's avatar also.
  
 Once you have your token you will be able to set your account’s webhook. This webhook will be used for receiving callbacks and user messages from Viber.
 So first you should set your account's webhook.For security reasons only URLs with valid and official SSL certificate from a trusted CA will be allowed. For more reference follow https://codeburst.io/whats-a-webhook-1827b07a3ffa.

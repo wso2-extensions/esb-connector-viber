@@ -23,7 +23,7 @@
 
      i) when a user sends it's first message to public account the user will be automatically subscribed to the account.
     ii) By pressing the subscribe button user can subscribed to the account.
-3.By running accountInfo method you can derive the user's id who are subscribed to the public account  and user's name, admin's avatar also.
+3.Then you need to assign the subscriber as a admin.After running accountInfo method you can derive the user's id who are subscribed to the public account   and user's name, admin's avatar also.
 #####Steps to follow in setting integration test.
 1. Download EI 6.4.0  by navigating to the following [URL](http://wso2.com/products/enterprise-service-bus/#).
 
@@ -40,8 +40,8 @@
 
 5. Update the 'esb-connector-viber.properties' file at the location "{VIBER_CONNECTOR_HOME}/repository" as below .
   
-     i)    apiUrl           -   Api URL for Viber.
-     ii)   appKey           -   Account authentication token.
+       i)    apiUrl           -   Api URL for Viber.
+       ii)   appKey           -   Account authentication token.
 
  6. Update the Viber properties file at location `<Connector_Home>/src/test/resources/artifacts/ESB/connector/config` as below.
       <br/></br>
