@@ -48,7 +48,6 @@
                 },
                 "broadcast_list":$5
                 }
-
             </format>
             <args>
                 <arg expression="$.senderName" evaluator="json"/>
