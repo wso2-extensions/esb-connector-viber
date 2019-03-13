@@ -2,13 +2,9 @@
 
 [ [Overview](#overview) ]  [ [Operation details](#operation-details) ]  [ [Sample configuration](#sample-configuration)]
 
-
 ## Overview
 
-
 This method allow you to  fetch the account’s details as registered in Viber.
-
-
 
 ## Operation details
 
@@ -17,7 +13,6 @@ This method allow you to  fetch the account’s details as registered in Viber.
 ```xml
    <viber.getAccountInfo/>
 ```
-
 ##### Sample request
 
 following is a sample JSON request that can be handled by the accountInfo operation.

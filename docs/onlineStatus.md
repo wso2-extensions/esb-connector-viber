@@ -7,7 +7,6 @@
 This method allow you to fetch the online status of a given subscribed account members.This method support up to 100 user id
 per request and those users must be subscribed to the account.
 
-
 ## Operation details
 
 ##### getOnline
