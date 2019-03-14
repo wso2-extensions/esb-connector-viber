@@ -80,6 +80,17 @@ following is a sample JSON request that can be handled by the  sendCarouselConte
     ]
 }
 ``````
+
+Given below is a sample response for the sendCarouselContentMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 5268755696075582411,
+    "chat_hostname": "SN-CHAT-27_"
+}
+```
 **Related Viber documentation**
 https://developers.viber.com/docs/api/rest-bot-api/#carousel-content-message
 
@@ -133,6 +144,16 @@ following is a sample JSON request that can be handled by the sendContactMessage
     "minApiVersion": 1,
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data"
+}
+```
+Given below is a sample response for the sendContactMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 5268755696075582411,
+    "chat_hostname": "SN-CHAT-27_"
 }
 ```
 **Related Viber documentation**
@@ -191,6 +212,16 @@ following is a sample JSON request that can be handled by the sendFileMessage op
     "trackingData": "tracking data"
 }
 ```
+Given below is a sample response for the sendFileMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52687596075582411,
+    "chat_hostname": "SN-CHAT-27_"
+}
+```
 **Related Viber documentation**
 https://developers.viber.com/docs/api/rest-bot-api/#file-message
 
@@ -242,6 +273,16 @@ following is a sample JSON request that can be handled by the sendLocationMessag
     "minApiVersion": 1,
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data"
+}
+```
+Given below is a sample response for the sendLocationMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52687556960755821,
+    "chat_hostname": "SN-CHAT-27_"
 }
 ```
 **Related Viber documentation**
@@ -298,6 +339,16 @@ following is a sample JSON request that can be handled by the sendPictureMessage
     "thumbnailUrl": "http://www.images.com/thumb.jpg"
 }
 ```
+Given below is a sample response for the sendPictureMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52687556965582411,
+    "chat_hostname": "SN-CHAT-27_"
+}
+```
 **Related Viber documentation**
 https://developers.viber.com/docs/api/rest-bot-api/#picture-message
 
@@ -345,6 +396,16 @@ following is a sample JSON request that can be handled by the sendStickerMessage
     "trackingData": "tracking data"
 }
 ```
+Given below is a sample response for the sendStickerMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52755696075582411,
+    "chat_hostname": "SN-CHAT-27_"
+}
+```
 **Related Viber documentation**
 https://developers.viber.com/docs/api/rest-bot-api/#sticker-message
 
@@ -390,6 +451,16 @@ following is a sample JSON request that can be handled by the sendTextMessage op
     "minApiVersion": 1,
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data"
+}
+```
+Given below is a sample response for the sendTextMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 5268755696075582411,
+    "chat_hostname": "SN-CHAT-27_"
 }
 ```
 **Related Viber documentation**
@@ -443,6 +514,16 @@ following is a sample JSON request that can be handled by the sendUrlMessage ope
     "trackingData": "tracking data"
 }
 `````
+Given below is a sample response for the sendUrlMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52687556075582411,
+    "chat_hostname": "SN-CHAT-27_"
+}
+```
 **Related Viber documentation**
 https://developers.viber.com/docs/api/rest-bot-api/#url-message
 
@@ -508,7 +589,7 @@ https://developers.viber.com/docs/api/rest-bot-api/#video-messag
 
 **Sample response**
 
-Given below is a sample response for the message operation.
+Given below is a sample response for the sendVideoMessage operation.
 
 ```json
 {

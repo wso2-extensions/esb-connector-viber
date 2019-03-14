@@ -57,15 +57,15 @@
             var trackingData = mc.getProperty("uri.var.trackingData");
             var minApiVersion = mc.getProperty("uri.var.minApiVersion");
 
-            if ( senderAvatarUrl!= null && senderAvatarUrl != "") {
+            if(senderAvatarUrl!= null && senderAvatarUrl != "") {
             payload.sender.avatar = senderAvatarUrl;
             }
 
-            if( trackingData != null && trackingData != ""){
+            if(trackingData != null && trackingData != "") {
             payload.tracking_data = trackingData;
             }
 
-            if( minApiVersion != null && minApiVersion != ""){
+            if(minApiVersion != null && minApiVersion != "") {
             payload.min_api_version = minApiVersion;
             }
 
@@ -74,8 +74,7 @@
         </script>
         <call>
             <endpoint>
-                <http method="POST"
-                      uri-template="{uri.var.apiUrl}/pa/send_message"/>
+                <http method="POST" uri-template="{uri.var.apiUrl}/pa/send_message"/>
             </endpoint>
         </call>
     </sequence>

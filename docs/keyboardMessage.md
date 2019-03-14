@@ -106,7 +106,18 @@ following is a sample JSON request that can be handled by the  sendKeyboardCarou
     ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the sendKeyboardCarouselContent operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52699926104738692,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 
 #### Send keyboard with contact message
 
@@ -166,7 +177,18 @@ following is a sample JSON request that can be handled by the sendKeyboardContac
     ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the keyboardContactMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52699926104738692,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 
 #### Send keyboard with file  message
 
@@ -229,7 +251,18 @@ following is a sample JSON request that can be handled by the sendKeyboardFile o
     ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the keyboardFileMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52692626104738692,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 #### Send keyboard with location  message
 
    This method allow you to send a keyboard with location message.
@@ -287,7 +320,18 @@ following is a sample JSON request that can be handled by the sendKeyboardLocati
     ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the keyboardLocationMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 69992626104738692,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 #### Send keyboard with picture  message
 
    This method allow you to send a keyboard with picture message.
@@ -345,7 +389,18 @@ following is a sample JSON request that can be handled by the sendKeyboardPictur
     ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the keyboardPictureMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52692626104738692,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 
 #### Send keyboard with sticker  message
 
@@ -403,7 +458,18 @@ following is a sample JSON request that can be handled by the sendKeyboardSticke
     ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the keyboardStickerMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 5269992604738692,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 #### Send keyboard with text message
 
    This method allow you to send a keyboard with text message.
@@ -459,7 +525,18 @@ following is a sample JSON request that can be handled by the sendKeyboardText o
       ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the keyboardTextMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 5269992626104738692,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 
 #### Send keyboard with url message
 
@@ -515,7 +592,18 @@ following is a sample JSON request that can be handled by the sendKeyboardUrl op
     ]
 }
 ````
+**Sample response**
 
+Given below is a sample response for the keyboardUrlMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 526999262610492,
+    "chat_hostname": "SN-CHAT-25_"
+}
+```
 #### Send keyboard with Vvdeo message
 
    This method allow you to send a keyboard with video message.
@@ -576,7 +664,7 @@ following is a sample JSON request that can be handled by the sendKeyboardVideo 
 ```
 **Sample response**
 
-Given below is a sample response for the keyboardMessage operation.
+Given below is a sample response for the keyboardVideoMessage operation.
 
 ```json
 {

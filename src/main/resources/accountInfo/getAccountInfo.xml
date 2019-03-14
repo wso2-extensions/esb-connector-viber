@@ -20,8 +20,7 @@
     <sequence>
         <call>
             <endpoint>
-                <http method="GET"
-                      uri-template="{uri.var.apiUrl}/pa/get_account_info"/>
+                <http method="GET" uri-template="{uri.var.apiUrl}/pa/get_account_info"/>
             </endpoint>
         </call>
     </sequence>

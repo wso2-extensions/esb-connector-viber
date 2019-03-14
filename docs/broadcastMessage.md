@@ -97,7 +97,30 @@ following is a sample JSON request that can be handled by the broadcastCarouselC
     ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastCarouselContentMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 528329699203523147,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 
 
 #### Broadcast contact message
@@ -156,7 +179,30 @@ following is a sample JSON request that can be handled by the broadcastContactMe
        ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastContactMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 528329699203527314,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 #### Broadcast file message
 
 This method allow you to send a file to multiple viber users who subscribe to the account.
@@ -216,7 +262,30 @@ following is a sample JSON request that can be handled by the broadcastFiletMess
       ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastFileMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 528329492035273147,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 #### Broadcast location message
 
 This method allow you to send a location details  to multiple viber users who subscribe to the account.
@@ -271,7 +340,30 @@ following is a sample JSON request that can be handled by the broadcastLocationt
       ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastLocationMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52832969925273147,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 #### Broadcast picture message
 
 This method allow you to send a picture to multiple viber users who subscribe to the account.
@@ -329,7 +421,30 @@ following is a sample JSON request that can be handled by the broadcastPictureMe
       ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastPictureMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52832969035273145,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 
 #### Broadcast sticker message
 
@@ -379,7 +494,30 @@ following is a sample JSON request that can be handled by the broadcastStickerMe
       ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastStickerMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 5283296992035273,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 #### Broadcast text message
 
 This method allow you to send a text to multiple viber users who subscribe to the account.
@@ -429,7 +567,30 @@ following is a sample JSON request that can be handled by the broadcastTextMessa
       ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastTextMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 5283296992073147,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 
 #### Broadcast url message
 
@@ -481,7 +642,30 @@ following is a sample JSON request that can be handled by the broadcastUrlMessag
        ]
 }
 ```
+**Sample response**
 
+Given below is a sample response for the broadcastUrlMessage operation.
+
+```json
+{
+    "status": 0,
+    "status_message": "ok",
+    "message_token": 52832962035273432,
+    "failed_list": [
+        {
+            "receiver": "3524386515ro12078",
+            "status": 5,
+            "status_message": "Not found"
+        },
+        {
+            "receiver": "hur36r735e6214879u9",
+            "status": 5,
+            "status_message": "Not found"
+        }
+    ],
+    "chat_hostname": "SN-CHAT-47_"
+}
+```
 
 ### Broadcast video message
 
@@ -546,13 +730,13 @@ following is a sample JSON request that can be handled by the broadcastVideoMess
 ```
 **Sample response**
 
-Given below is a sample response for the broadcastMessage operation.
+Given below is a sample response for the broadcastVideoMessage operation.
 
 ```json
 {
     "status": 0,
     "status_message": "ok",
-    "message_token": 5283296992035273147,
+    "message_token": 528329699203547,
     "failed_list": [
         {
             "receiver": "3524386515ro12078",

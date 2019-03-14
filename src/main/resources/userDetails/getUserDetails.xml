@@ -32,8 +32,7 @@
         </payloadFactory>
         <call>
             <endpoint>
-                <http method="POST"
-                      uri-template="{uri.var.apiUrl}/pa/get_user_details"/>
+                <http method="POST" uri-template="{uri.var.apiUrl}/pa/get_user_details"/>
             </endpoint>
         </call>
     </sequence>

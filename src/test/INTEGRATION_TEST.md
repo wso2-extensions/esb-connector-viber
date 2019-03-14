@@ -1,4 +1,4 @@
-##Integration tests for WSO2 ESB Viber connector
+##Integration tests for WSO2 EI Viber connector
 
 #####Pre-requisites:
 

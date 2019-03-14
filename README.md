@@ -9,13 +9,13 @@ It allows you to access the [Viber REST API](https://developers.viber.com/docs/a
 
 | Connector Version | Viber API Version | Supported WSO2 EI Version |
 | ------------- | ------------- | ------------- |
-| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/releases/tag/org.wso2.carbon.connector.viber-1.0.0)  | V7.3.0| ESB 6.4.0 |
+| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/releases/tag/org.wso2.carbon.esb.connector.viber-1.0.0)  | V7.3.0| ESB 6.4.0 |
 
 ## Getting started
 
 ###### Download and install the connector
 
-1. Download the connector from [WSO2 Store](https://store.wso2.com/store/assets/esbconnector/details/7181a316-bcac-4cbe-a617-a795abe4dcf3) by clicking the Download Connector button.
+1. Download the connector from [WSO2 Store](https://store.wso2.com/store/assets/esbconnector/details/bb866487-cc0b-4bf6-a54c-06883dd50936) by clicking the Download Connector button.
 2. Then you can follow this [Documentation](https://docs.wso2.com/display/EI640/Working+with+Connectors+via+the+Management+Console) to add and enable the connector via the Management Console in your EI instance.
 3. For more information on using connectors and their operations in your EI configurations, see [Using a Connector](https://docs.wso2.com/display/EI640/Using+a+Connector).
 4. If you want to work with connectors via EI tooling, see [Working with Connectors via Tooling](https://docs.wso2.com/display/EI640/Working+with+Connectors+via+Tooling).

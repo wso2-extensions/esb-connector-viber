@@ -55,15 +55,15 @@
             var buttonsGroupRows = mc.getProperty('uri.var.buttonsGroupRows');
             var buttonsGroupColumns = mc.getProperty('uri.var.buttonsGroupColumns');
 
-            if ( backGroundColor != null && backGroundColor != "") {
+            if(backGroundColor != null && backGroundColor != "") {
             payload.rich_media.BgColor = backGroundColor;
             }
 
-            if ( buttonsGroupRows != null && buttonsGroupRows != "") {
+            if(buttonsGroupRows != null && buttonsGroupRows != "") {
             payload.rich_media.ButtonsGroupRows = buttonsGroupRows;
             }
 
-            if ( buttonsGroupColumns != null && buttonsGroupColumns != "") {
+            if(buttonsGroupColumns != null && buttonsGroupColumns != "") {
             payload.rich_media.ButtonsGroupColumns = buttonsGroupColumns;
             }
 
@@ -72,8 +72,7 @@
         </script>
         <call>
             <endpoint>
-                <http method="POST"
-                      uri-template="{uri.var.apiUrl}/pa/send_message"/>
+                <http method="POST" uri-template="{uri.var.apiUrl}/pa/send_message"/>
             </endpoint>
         </call>
     </sequence>

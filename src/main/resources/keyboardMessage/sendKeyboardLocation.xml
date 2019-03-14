@@ -67,15 +67,15 @@
             var defaultHeight = mc.getProperty('uri.var.defaultHeight');
             var customDefaultHeigh = mc.getProperty('uri.var.customDefaultHeigh');
 
-            if ( bgColor != null && bgColor != "") {
+            if(bgColor != null && bgColor != "") {
             payload.keyboard.BgColor = bgColor;
             }
 
-            if ( defaultHeight != null && defaultHeight != "") {
+            if(defaultHeight != null && defaultHeight != "") {
             payload.keyboard.DefaultHeight = defaultHeight;
             }
 
-            if ( customDefaultHeigh != null && customDefaultHeigh != "") {
+            if(customDefaultHeigh != null && customDefaultHeigh != "") {
             payload.keyboard.CustomDefaultHeigh = customDefaultHeigh;
             }
 
@@ -84,8 +84,7 @@
         </script>
         <call>
             <endpoint>
-                <http method="POST"
-                      uri-template="{uri.var.apiUrl}/pa/send_message"/>
+                <http method="POST" uri-template="{uri.var.apiUrl}/pa/send_message"/>
             </endpoint>
         </call>
     </sequence>
