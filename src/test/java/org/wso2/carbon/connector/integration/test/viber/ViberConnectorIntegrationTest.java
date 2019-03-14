@@ -76,9 +76,8 @@ public class ViberConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 apiRestResponse.getBody().getString("status_message"));
 
             Assert.assertEquals(eiRestResponse.getBody().getJSONArray("members").getJSONObject(1).
-                    getString("name"),
-                apiRestResponse.getBody().getJSONArray("members").getJSONObject(1).
-                    getString("name"));
+                            getString("name"),
+                apiRestResponse.getBody().getJSONArray("members").getJSONObject(1).getString("name"));
         }
 
         String user1 = apiRestResponse.getBody().getJSONArray("members").getJSONObject(0).getString("id");
@@ -88,13 +87,10 @@ public class ViberConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         connectorProperties.setProperty("user2", user2);
 
         String senderAvatarUrl = apiRestResponse.getBody().getJSONArray("members").getJSONObject(0).
-            getString("avatar");
-        connectorProperties.setProperty("senderAvatarUrl", senderAvatarUrl);
+            getString("avatar");connectorProperties.setProperty("senderAvatarUrl", senderAvatarUrl);
 
         String senderName = apiRestResponse.getBody().getJSONArray("members").getJSONObject(0).
-            getString("name");
-        connectorProperties.setProperty("senderName", senderName);
-
+            getString("name");connectorProperties.setProperty("senderName", senderName);
     }
 
     /**
@@ -120,7 +116,7 @@ public class ViberConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 apiRestResponse.getBody().getString("status_message"));
 
             Assert.assertEquals(eiRestResponse.getBody().getString("status"),
-                apiRestResponse.getBody().getString("status"));
+                    apiRestResponse.getBody().getString("status"));
         }
     }
 
@@ -147,7 +143,7 @@ public class ViberConnectorIntegrationTest extends ConnectorIntegrationTestBase 
             Assert.assertEquals(eiRestResponse.getBody().getString("status_message"),
                 apiRestResponse.getBody().getString("status_message"));
             Assert.assertEquals(eiRestResponse.getBody().getString("status"),
-                apiRestResponse.getBody().getString("status"));
+                    apiRestResponse.getBody().getString("status"));
         }
     }
 
@@ -289,7 +285,6 @@ public class ViberConnectorIntegrationTest extends ConnectorIntegrationTestBase 
     /**
      * Positive test case for broadcastFileMessage method with optional parameters.
      */
-
     @Test(priority = 9, groups = {"wso2.esb"}, dependsOnMethods = {"testAccountInfoMandatory"},
         description = "viber {broadcastFileMessage} integration test with mandatory parameters.")
     public void testBroadcastFileMessageWithOptionalParameters() throws Exception {
@@ -372,8 +367,7 @@ public class ViberConnectorIntegrationTest extends ConnectorIntegrationTestBase 
      * Positive test case for broadcastLocationMessage method with optional parameters.
      */
     @Test(priority = 12, groups = {"wso2.esb"}, dependsOnMethods = {"testAccountInfoMandatory"},
-        description = "viber {broadcastLocationMessage} " +
-            "integration test with optional parameters.")
+        description = "viber {broadcastLocationMessage integration test with optional parameters.")
     public void testBroadcastLocationMessageWithOptionalParameters() throws Exception {
 
         eiRequestHeadersMap.put("Action", "urn:broadcastLocationMessage");
@@ -755,7 +749,6 @@ public class ViberConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         description = "viber {broadcastVideoMessage integration test with mandatory parameters.")
     public void testBroadcastVideoMessageWithMandatoryParameters() throws Exception {
 
-        ;
         eiRequestHeadersMap.put("Action", "urn:broadcastVideoMessage");
 
         RestResponse<JSONObject> eiRestResponse = sendJsonRestRequest(proxyUrl, "POST", eiRequestHeadersMap,
