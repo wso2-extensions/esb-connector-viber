@@ -16,7 +16,6 @@
   ~ specific language governing permissions and limitations
   ~ under the License.
   -->
-
 <template xmlns="http://ws.apache.org/ns/synapse" name="broadcastTextMessage">
     <parameter name="senderName" description="Sender's name to display"/>
     <parameter name="ids" description="Unique viber user ids"/>
@@ -71,7 +70,7 @@
             }
 
             mc.setPayloadJSON(payload);
-            ]]>
+         ]]>
         </script>
         <call>
             <endpoint>

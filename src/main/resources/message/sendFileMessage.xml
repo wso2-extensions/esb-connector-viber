@@ -16,7 +16,6 @@
   ~ specific language governing permissions and limitations
   ~ under the License.
   -->
-
 <template xmlns="http://ws.apache.org/ns/synapse" name="sendFileMessage">
     <parameter name="receiver" description="Unique viber user id"/>
     <parameter name="senderName" description="The sender's name to display"/>
