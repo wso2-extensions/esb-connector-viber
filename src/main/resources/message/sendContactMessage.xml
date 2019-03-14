@@ -49,7 +49,6 @@
                 }
                 }
             </format>
-
             <args>
                 <arg expression="$.receiver" evaluator="json"/>
                 <arg expression="$.senderName" evaluator="json"/>
@@ -80,7 +79,7 @@
             }
 
             mc.setPayloadJSON(payload);
-            ]]>
+         ]]>
         </script>
         <call>
             <endpoint>

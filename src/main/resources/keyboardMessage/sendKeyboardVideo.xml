@@ -48,7 +48,6 @@
                 "Buttons":$5
                 }
                 }
-
             </format>
             <args>
                 <arg expression="$.receiver" evaluator="json"/>
@@ -78,7 +77,7 @@
             }
 
             mc.setPayloadJSON(payload);
-        ]]>
+         ]]>
         </script>
         <call>
             <endpoint>

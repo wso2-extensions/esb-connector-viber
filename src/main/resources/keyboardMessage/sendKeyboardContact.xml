@@ -79,9 +79,8 @@
             }
 
             mc.setPayloadJSON(payload);
-        ]]>
+         ]]>
         </script>
-
         <call>
             <endpoint>
                 <http method="POST"

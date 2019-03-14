@@ -82,7 +82,7 @@
             }
 
             mc.setPayloadJSON(payload);
-        ]]>
+         ]]>
         </script>
         <call>
             <endpoint>

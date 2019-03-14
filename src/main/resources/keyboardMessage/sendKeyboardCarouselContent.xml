@@ -97,7 +97,7 @@
             payload.rich_media.ButtonsGroupColumns = buttonsGroupColumns;
             }
             mc.setPayloadJSON(payload);
-        ]]>
+         ]]>
         </script>
         <call>
             <endpoint>
