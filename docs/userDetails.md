@@ -26,8 +26,8 @@ following is a sample JSON request that can be handled by the userDetails operat
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "id":"E4Ux8N0j3HcXEbrzF+nK5Q=="
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "id": "E4Ux8HcXEbrzF+nK5Q=="
 }
 ```
 **Sample response**
@@ -40,8 +40,8 @@ Given below is a sample response for the userDetails operation.
     "status_message": "ok",
     "chat_hostname": "SN-CHAT-03_",
     "user": {
-        "id": "E4Ux8N0j3HcXEbrzF+nK5Q==",
-        "name": "Sarangika Ethugala",
+        "id": "E4Ux8HcXEbrzF+nK5Q==",
+        "name": "Imali Damayanthi",
         "avatar": "https://media-direct.cdn.viber.com/download_photo?dlid=Z0h3a73XJ78G6elIfG-nfTQ2CKe4cFQxuZPF5lZw4xu1J7Y6x6RmufH5nnA2IG00r6K8ul7u_juvAqeVhMfXPyaorQrvpiY3C8kiSuShHESHTfl39rL4jVi5cGAq0CmTYTtQfg&fltp=jpg&imsz=0000",
         "language": "en",
         "country": "LK",
@@ -96,9 +96,8 @@ Following example illustrates how to connect to Viber  with the init operation a
    ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "id":    
-           "8iGPPECtQNw6KzwG1rnQQg=="
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "id": "E4Ux8HcXEbrzF+nK5Q=="
 }
 ```
    3. Replace the credentials with your values.
@@ -110,4 +109,4 @@ Following example illustrates how to connect to Viber  with the init operation a
      
    5. Viber returns a json response similar to the one shown below:
  ``````
- "{"status":0,"status_message":"ok","chat_hostname":"SN-CHAT-04_","user":{"id":"8iGPPECtQNw6KzwG1rnQQg==","name":"bhathiya","language":"en","country":"LK","primary_device_os":"Android 9","api_version":7,"viber_version":"9.8.5.20","mcc":413,"mnc":1,"device_type":"Mi A1"}}"
+ "{"status":0,"status_message":"ok","chat_hostname":"SN-CHAT-04_","user":{"id":"E4Ux8HcXEbrzF+nK5Q==","name":"Imali Damayanthi","avatar": "https://media-direct.cdn.viber.com/download_photo?dlid=Z0h3a73XJ78G6elIfG-nfTQ2CKe4cFQxuZPF5lZw4xu1J7Y6x6RmufH5nnA2IG00r6K8ul7u_juvAqeVhMfXPyaorQrvpiY3C8kiSuShHESHTfl39rL4jVi5cGAq0CmTYTtQfg&fltp=jpg&imsz=0000","language":"en","country":"LK","primary_device_os":"Android 9","api_version":7,"viber_version":"9.8.5.20","mcc":413,"mnc":1,"device_type":"HUAWEI LUA-U22"}}"

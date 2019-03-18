@@ -60,8 +60,8 @@ following is a sample JSON request that can be handled by the  sendCarouselConte
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HbrzF+nK5Q==",
     "type": "rich_media",
     "backGroundColor":"#2db9b9",
     "buttonsGroupRows":6,
@@ -134,8 +134,8 @@ following is a sample JSON request that can be handled by the sendContactMessage
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HcXEbrzF+Q==",
     "senderName": "john martin",
     "type": "contact",
     "sender": "http://avatar.example.com",
@@ -200,8 +200,8 @@ following is a sample JSON request that can be handled by the sendFileMessage op
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HcXzF+nK5Q==",
     "senderName": "John macklen",
     "type": "file",
     "mediaUrlFile": "http://www.images.com/file.doc",
@@ -264,8 +264,8 @@ following is a sample JSON request that can be handled by the sendLocationMessag
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HcXE+nK5Q==",
     "senderName": "John McClane",
     "type": "location",
     "latitute": "7.896224,",
@@ -327,8 +327,8 @@ following is a sample JSON request that can be handled by the sendPictureMessage
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HcXEbnK5Q==",
     "senderName": "John McClane",
     "type": "picture",
     "text": "Photo description",
@@ -386,8 +386,8 @@ following is a sample JSON request that can be handled by the sendStickerMessage
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HcXEbrK5Q==",
     "senderName": "john kumar",
     "type": "sticker",
     "stickerId": 1225,
@@ -443,8 +443,8 @@ following is a sample JSON request that can be handled by the sendTextMessage op
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HrzF+nK5Q==",
     "senderName": "John macklen",
     "type": "text",
     "text": "Hello world!",
@@ -504,8 +504,8 @@ following is a sample JSON request that can be handled by the sendUrlMessage ope
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HcXzF+nK5Q==",
     "senderName": "John macklen",
     "type": "url",
     "mediaUrl": "http://www.google.com",
@@ -571,8 +571,8 @@ following is a sample JSON request that can be handled by the sendVideoMessage o
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8N0j3HcXzF+nK5Q==",
     "senderName": "john alis",
     "type": "video",
     "mediaUrlVideo": "http://www.images.com/video.mp4",
@@ -655,8 +655,8 @@ Following example illustrates how to connect to Viber  with the init operation a
   ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
-    "receiver": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
+    "receiver": "E4Ux8HcXEbrzF+nK5Q==",
     "senderName": "john alis",
     "type": "video",
     "size": 10000,

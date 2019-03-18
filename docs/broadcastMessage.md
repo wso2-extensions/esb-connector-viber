@@ -72,7 +72,7 @@ following is a sample JSON request that can be handled by the broadcastCarouselC
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80",
     "senderName": "martin lutar",
     "backGroundColor":"#2db9b9",
     "buttonsGroupRows":6,
@@ -91,7 +91,7 @@ following is a sample JSON request that can be handled by the broadcastCarouselC
         }
     ],
     "ids": [
-        "E4Ux8N0j3HcXEbrzF+nK5Q==",
+        "E4Ux8N0j3HcXnK5Q==",
         "3524386515ro12078",
         "hur36r735e6214879u9"
     ]
@@ -164,7 +164,7 @@ following is a sample JSON request that can be handled by the broadcastContactMe
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80",
     "senderName": "john maclane",
     "type": "contact",
     "contactName": "den mark",
@@ -173,7 +173,7 @@ following is a sample JSON request that can be handled by the broadcastContactMe
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data",
      "ids": [
-           "E4Ux8N0j3HcXEbrzF+nK5Q==",
+           "E4Ux8N0j3HcXEb+nK5Q==",
            "3524386515ro12078",
            "hur36r735e6214879u9"
        ]
@@ -246,7 +246,7 @@ following is a sample JSON request that can be handled by the broadcastFiletMess
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80",
     "senderName": "john maclane",
     "type": "file",
     "mediaUrlFile": "http://www.images.com/file.doc",
@@ -256,7 +256,7 @@ following is a sample JSON request that can be handled by the broadcastFiletMess
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data",
     "ids": [
-          "E4Ux8N0j3HcXEbrzF+nK5Q==",
+          "E4Ux8N0j3HcXzF+nK5Q==",
           "3524386515ro12078",
           "hur36r735e6214879u9"
       ]
@@ -325,7 +325,7 @@ following is a sample JSON request that can be handled by the broadcastLocationt
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80",
     "senderName": "john maclane",
     "type": "location",
     "latitude": "87.45",
@@ -334,7 +334,7 @@ following is a sample JSON request that can be handled by the broadcastLocationt
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data",
     "ids": [
-          "E4Ux8N0j3HcXEbrzF+nK5Q==",
+          "E4Ux8N0j3HcrzF+nK5Q==",
           "3524386515ro12078",
           "hur36r735e6214879u9"
       ]
@@ -405,7 +405,7 @@ following is a sample JSON request that can be handled by the broadcastPictureMe
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80",
     "senderName": "malki sandamini",
     "type": "picture",
     "text": "my photo",
@@ -415,7 +415,7 @@ following is a sample JSON request that can be handled by the broadcastPictureMe
     "trackingData": "tracking data",
     "thumbnailUrl": "http://www.images.com/thumb.jpg",
     "ids": [
-          "E4Ux8N0j3HcXEbrzF+nK5Q==",
+          "E4Ux8N0j3HcXzF+nK5Q==",
           "3524386515ro12078",
           "hur36r735e6214879u9"
       ]
@@ -480,7 +480,7 @@ following is a sample JSON request that can be handled by the broadcastStickerMe
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80",
     "senderName": "john dias",
     "type": "sticker",
     "stickerId": 46102,
@@ -488,7 +488,7 @@ following is a sample JSON request that can be handled by the broadcastStickerMe
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data",
     "ids": [
-          "E4Ux8N0j3HcXEbrzF+nK5Q==",
+          "E4Ux8N0j3HcrzF+nK5Q==",
           "3524386515ro12078",
           "hur36r735e6214879u9"
       ]
@@ -553,7 +553,7 @@ following is a sample JSON request that can be handled by the broadcastTextMessa
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80",
     "senderName": "martin lutar",
     "type": "text",
     "text": "hello",
@@ -561,7 +561,7 @@ following is a sample JSON request that can be handled by the broadcastTextMessa
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data",
     "ids": [
-          "E4Ux8N0j3HcXEbrzF+nK5Q==",
+          "E4Ux8N0j3HcXEbF+nK5Q==",
           "3524386515ro12078",
           "hur36r735e6214879u9"
       ]
@@ -628,7 +628,7 @@ following is a sample JSON request that can be handled by the broadcastUrlMessag
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
     "senderName": "john alis",
     "type": "url",
     "mediaUrl": "http://www.website.com/go_here",
@@ -636,7 +636,7 @@ following is a sample JSON request that can be handled by the broadcastUrlMessag
     "senderAvatarUrl": "http://avatar.example.com",
     "trackingData": "tracking data",
      "ids": [
-           "E4Ux8N0j3HcXEbrzF+nK5Q==",
+           "E4Ux8N0j3brF+nK5Q==",
            "3524386515ro12078",
            "hur36r735e6214879u9"
        ]
@@ -711,7 +711,7 @@ following is a sample JSON request that can be handled by the broadcastVideoMess
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
     "senderName": "martin lutar",
     "type": "video",
     "mediaUrlVideo": "http://www.images.com/video.mp4",
@@ -722,7 +722,7 @@ following is a sample JSON request that can be handled by the broadcastVideoMess
     "thumbnailUrl": "http://www.images.com/thumb.jpg",
     "duration": 60,
     "ids": [
-          "E4Ux8N0j3HcXEbrzF+nK5Q==",
+          "E4Ux8N0j3brzF+nK5Q==",
           "3524386515ro12078",
           "hur36r735e6214879u9"
       ]
@@ -810,7 +810,7 @@ Following example illustrates how to connect to Viber  with the init operation a
   ```json
  {
      "apiUrl": "https://chatapi.viber.com",
-     "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+     "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
      "senderName": "john",
      "type": "video",
      "mediaUrlVideo": "http://www.images.com/video.mp4",
@@ -821,7 +821,7 @@ Following example illustrates how to connect to Viber  with the init operation a
      "thumbnailUrl": "http://www.images.com/thumb.jpg",
      "duration": 60,
      "ids": [
-         "E4Ux8N0j3HcXEbrzF+nK5Q==",
+         "E4Ux8N0j3HczF+nK5Q==",
          "8iGPPECtQNw6KzwG1rnQQg==",
          "/8v+V5APa/jLsiywMa1HOA=="
      ]

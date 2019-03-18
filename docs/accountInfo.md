@@ -19,7 +19,7 @@ following is a sample JSON request that can be handled by the accountInfo operat
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80"
+    "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80"
 }
 ```
 **Sample response**
@@ -31,7 +31,7 @@ Given below is a sample response for the accountInfo operation.
 {
     "status": 0,
     "status_message": "ok",
-    "id": "pa:5253986655490529213",
+    "id": "pa:525398665549213",
     "chat_hostname": "SN-CHAT-50_",
     "name": "viberbot94",
     "uri": "viberbot94",
@@ -58,25 +58,19 @@ Given below is a sample response for the accountInfo operation.
     ],
     "members": [
         {
-            "id": "/8v+V5APa/jLsiywMa1HOA==",
-            "name": "Nirubikaa",
-            "avatar": "https://media-direct.cdn.viber.com/download_photo?dlid=Z0h3a73XJ78G6elIfG-nfTQ2CqexdFQ-45afsFd2tkq1J7k5wfFj76X5y3M2I21lpfS-7lHp-W7-VfHGh5WBPCep_V6_-XNgW5BwSr-kTkXTEP9w1R7q8WIWl5XeVCDPsYFFKQ&fltp=jpg&imsz=0000",
-            "role": "admin"
-        },
-        {
-            "id": "E4Ux8N0j3HcXEbrzF+nK5Q==",
-            "name": "Sarangika Ethugala",
+            "id": "E4Ux8N0j3EbrzF+nK5Q==",
+            "name": "Imali Damayanthi",
             "avatar": "https://media-direct.cdn.viber.com/download_photo?dlid=Z0h3a73XJ78G6elIfG-nfTQ2CKe4cFQxuZPF5lZw4xu1J7Y6x6RmufH5nnA2IG00r6K8ul7u_juvAqeVhMfXPyaorQrvpiY3C8kiSuShHESHTfl39rL4jVi5cGAq0CmTYTtQfg&fltp=jpg&imsz=0000",
             "role": "admin"
         },
         {
-            "id": "8iGPPECtQNw6KzwG1rnQQg==",
-            "name": "bhathiya",
+            "id": "8iGPPEw6KzwG1rnQQg==",
+            "name": "bhagya",
             "role": "admin"
         },
         {
-            "id": "/Etuco5vE0CJjo1IWTaDIQ==",
-            "name": "Ajay",
+            "id": "/Etuco5CJjo1IWTaDIQ==",
+            "name": "Ajantha",
             "role": "admin"
         }
     ],
@@ -124,7 +118,7 @@ Following example illustrates how to connect to Viber  with the init operation a
   ```json
  {
      "apiUrl": "https://chatapi.viber.com",
-     "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80"
+     "appKey": "48e9e906bf27d7bd-97b11a4effa-255ca5dfb8545d80"
  }
   ```
   3. Replace the credentials with your values.
@@ -136,4 +130,4 @@ Following example illustrates how to connect to Viber  with the init operation a
   ```
   5. Viber returns a json response similar to the one shown below:
   ``````
-{"status":0,"status_message":"ok","id":"pa:5253986655490529213","chat_hostname":"SN-CHAT-29_","name":"viberbot94","uri":"viberbot94","icon":"https://media-direct.cdn.viber.com/pg_download?pgtp=icons&dlid=0-04-01-eacaa33aac6c2f1f673b065b5e72dfcf7e658df5d2f87f564f35f179f92be42e&fltp=jpg&imsz=0000","background":"https://media-direct.cdn.viber.com/pg_download?pgtp=backgrounds&dlid=9ad40c8d792af53a03871434d432cf15e1b4ac59426c048ce8b335426d1c70f0&fltp=jpg&imsz=0000","category":"Companies, Brands & Products","subcategory":"IT","location":{"lat":7.896224,"lon":80.6736774},"country":"LK","webhook":"https://deskun.com/viber/48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80","event_types":["subscribed","unsubscribed","conversation_started","delivered","failed","message","seen"],"members":[{"id":"E4Ux8N0j3HcXEbrzF+nK5Q==","name":"Sarangika Ethugala","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=Z0h3a73XJ78G6elIfG-nfTQ2CKexdlQ46pbFv1J_7EbjdLE7wKU36vCqmSNnJD8zr6W4ugrq822pVvrB1sfRZiCjrVm7-yI1X8lySbegGRGBGvhxqOkrifVu4z2ld1w72-eTzw&fltp=jpg&imsz=0000","role":"admin"},{"id":"8iGPPECtQNw6KzwG1rnQQg==","name":"bhathiya","role":"admin"},{"id":"/Etuco5vE0CJjo1IWTaDIQ==","name":"Ajay","role":"admin"}],"subscribers_count":7,"chat_flags":[]}
+{"status":0,"status_message":"ok","id":"pa:525398490529213","chat_hostname":"SN-CHAT-29_","name":"viberbot94","uri":"viberbot94","icon":"https://media-direct.cdn.viber.com/pg_download?pgtp=icons&dlid=0-04-01-eacaa33aac6c2f1f673b065b5e72dfcf7e658df5d2f87f564f35f179f92be42e&fltp=jpg&imsz=0000","background":"https://media-direct.cdn.viber.com/pg_download?pgtp=backgrounds&dlid=9ad40c8d792af53a03871434d432cf15e1b4ac59426c048ce8b335426d1c70f0&fltp=jpg&imsz=0000","category":"Companies, Brands & Products","subcategory":"IT","location":{"lat":7.896224,"lon":80.6736774},"country":"LK","webhook":"https://deskun.com/viber/48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80","event_types":["subscribed","unsubscribed","conversation_started","delivered","failed","message","seen"],"members":[{"id":"E4Ux8N0j3HcbrzF+nK5Q==","name":"Imali Damayanthi","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=Z0h3a73X6elIfG-nfTQ2CKexdlQ46pbFv1J_7EbjdLE7wKU36vCqmSNnJD8zr6W4ugrq822pVvrB1sfRZiCjrVm7-yI1X8lySbegGRGBGvhxqOkrifVu4z2ld1w72-eTzw&fltp=jpg&imsz=0000","role":"admin"},{"id":"8iGPPECtQNw6KrnQQg==","name":"bhagya","role":"admin"},{"id":"/Etuco5vjo1IWTaDIQ==","name":"Ajantha","role":"admin"}],"subscribers_count":7,"chat_flags":[]}

@@ -26,11 +26,11 @@ following is a sample JSON request that can be handled by the onlineStatus opera
 ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
     "ids": [
-       "E4Ux8N0j3HcXEbrzF+nK5Q==",
-       "8iGPPECtQNw6KzwG1rnQQg==",
-       "/8v+V5APa/jLsiywMa1HOA=="     
+       "E4Ux8N0j3HcXE+nK5Q==",
+       "8iGPPECtQNw6KznQQg==",
+       "/8v+a/jLsiywMa1HOA=="     
     ]
 }
 ```
@@ -44,19 +44,19 @@ Given below is a sample response for the onlineStatus operation.
     "status_message": "ok",
     "users": [
         {
-            "id": "E4Ux8N0j3HcXEbrzF+nK5Q==",
+            "id": "E4Ux8N0j3HcXE+nK5Q==",
             "online_status": 1,
             "online_status_message": "offline",
             "last_online": 1549466821367
         },
         {
-            "id": "8iGPPECtQNw6KzwG1rnQQg==",
+            "id": "8iGPPECtQNw6KznQQg==",
             "online_status": 1,
             "online_status_message": "offline",
             "last_online": 1549427099386
         },
         {
-            "id": "/8v+V5APa/jLsiywMa1HOA==",
+            "id": "/8v+a/jLsiywMa1HOA==",
             "online_status": 4,
             "online_status_message": "unavailable",
             "last_online": 0
@@ -106,11 +106,11 @@ Following example illustrates how to connect to Viber  with the init operation a
    ```json
 {
     "apiUrl": "https://chatapi.viber.com",
-    "appKey": "48e9e906bf27d7bd-97e6c6eb11a4effa-255ca5dfb8545d80",
+    "appKey": "48e9e906bf27d7bd-97ba4effa-255ca5dfb8545d80",
     "ids": [
-        "E4Ux8N0j3HcXEbrzF+nK5Q==",
-        "8iGPPECtQNw6KzwG1rnQQg==",
-        "/8v+V5APa/jLsiywMa1HOA=="
+        "E4Ux8N0j3HcXE+nK5Q==",
+        "8iGPPECtQNw6KznQQg==", 
+        "/8v+a/jLsiywMa1HOA=="
     ]
 }
    ```
