@@ -38,12 +38,12 @@
             <format>
                 {
                 "sender":{
-                "name":"$1"
+                    "name":"$1"
                 },
                 "type":"$2",
                 "location":{
-                "lat":"$3",
-                "lon":"$4"
+                    "lat":"$3",
+                    "lon":"$4"
                 },
                 "broadcast_list":$5
                 }
@@ -65,18 +65,15 @@
             var trackingData = mc.getProperty("uri.var.trackingData");
             var minApiVersion = mc.getProperty("uri.var.minApiVersion");
 
-            if(senderAvatarUrl!= null && senderAvatarUrl != "") {
-            payload.sender.avatar = senderAvatarUrl;
+            if (senderAvatarUrl!= null && senderAvatarUrl != "") {
+                payload.sender.avatar = senderAvatarUrl;
             }
-
-            if(trackingData != null && trackingData != "") {
-            payload.tracking_data = trackingData;
+            if (trackingData != null && trackingData != "") {
+                payload.tracking_data = trackingData;
             }
-
-            if(minApiVersion != null && minApiVersion != "") {
-            payload.min_api_version = minApiVersion
+            if (minApiVersion != null && minApiVersion != "") {
+                payload.min_api_version = minApiVersion
             }
-
             mc.setPayloadJSON(payload);
          ]]>
         </script>

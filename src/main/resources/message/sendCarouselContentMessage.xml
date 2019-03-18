@@ -37,8 +37,8 @@
                 "type":"$2",
                 "min_api_version":2,
                 "rich_media":{
-                "Type":"rich_media",
-                "Buttons":$3
+                    "Type":"rich_media",
+                    "Buttons":$3
                 }
                 }
             </format>
@@ -55,18 +55,15 @@
             var buttonsGroupRows = mc.getProperty('uri.var.buttonsGroupRows');
             var buttonsGroupColumns = mc.getProperty('uri.var.buttonsGroupColumns');
 
-            if(backGroundColor != null && backGroundColor != "") {
-            payload.rich_media.BgColor = backGroundColor;
+            if (backGroundColor != null && backGroundColor != "") {
+                payload.rich_media.BgColor = backGroundColor;
             }
-
-            if(buttonsGroupRows != null && buttonsGroupRows != "") {
-            payload.rich_media.ButtonsGroupRows = buttonsGroupRows;
+            if (buttonsGroupRows != null && buttonsGroupRows != "") {
+                payload.rich_media.ButtonsGroupRows = buttonsGroupRows;
             }
-
-            if(buttonsGroupColumns != null && buttonsGroupColumns != "") {
-            payload.rich_media.ButtonsGroupColumns = buttonsGroupColumns;
+            if (buttonsGroupColumns != null && buttonsGroupColumns != "") {
+                payload.rich_media.ButtonsGroupColumns = buttonsGroupColumns;
             }
-
             mc.setPayloadJSON(payload);
          ]]>
         </script>

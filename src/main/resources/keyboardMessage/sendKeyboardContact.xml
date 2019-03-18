@@ -41,12 +41,12 @@
                 "receiver":"$1",
                 "type":"$2",
                 "contact":{
-                "name":"$3",
-                "phone_number":"$4"
+                    "name":"$3",
+                    "phone_number":"$4"
                 },
                 "keyboard":{
-                "Type":"keyboard",
-                "Buttons":$5
+                    "Type":"keyboard",
+                    "Buttons":$5
                 }
                 }
             </format>
@@ -65,18 +65,15 @@
             var defaultHeight = mc.getProperty('uri.var.defaultHeight');
             var customDefaultHeigh = mc.getProperty('uri.var.customDefaultHeigh');
 
-            if(bgColor != null && bgColor != "") {
-            payload.keyboard.BgColor = bgColor;
+            if (bgColor != null && bgColor != "") {
+                payload.keyboard.BgColor = bgColor;
             }
-
-            if(defaultHeight != null && defaultHeight != "") {
-            payload.keyboard.DefaultHeight = defaultHeight;
+            if (defaultHeight != null && defaultHeight != "") {
+                payload.keyboard.DefaultHeight = defaultHeight;
             }
-
-            if(customDefaultHeigh != null && customDefaultHeigh != "") {
-            payload.keyboard.CustomDefaultHeigh = customDefaultHeigh;
+            if (customDefaultHeigh != null && customDefaultHeigh != "") {
+                payload.keyboard.CustomDefaultHeigh = customDefaultHeigh;
             }
-
             mc.setPayloadJSON(payload);
          ]]>
         </script>

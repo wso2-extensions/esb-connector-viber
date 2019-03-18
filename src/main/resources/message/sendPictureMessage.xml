@@ -41,7 +41,7 @@
                 {
                 "receiver":"$1",
                 "sender":{
-                "name":"$2"
+                    "name":"$2"
                 },
                 "type":"$3",
                 "text":"$4",
@@ -64,22 +64,18 @@
             var minApiVersion = mc.getProperty("uri.var.minApiVersion");
             var thumbnailUrl = mc.getProperty("uri.var.thumbnailUrl");
 
-            if(senderAvatarUrl!= null && senderAvatarUrl != "") {
-            payload.sender.avatar = senderAvatarUrl;
+            if (senderAvatarUrl!= null && senderAvatarUrl != "") {
+                payload.sender.avatar = senderAvatarUrl;
             }
-
-            if(trackingData != null && trackingData != "") {
-            payload.tracking_data = trackingData;
+            if (trackingData != null && trackingData != "") {
+                payload.tracking_data = trackingData;
             }
-
-            if(minApiVersion != null && minApiVersion != "") {
-            payload.min_api_version = minApiVersion;
+            if( minApiVersion != null && minApiVersion != "") {
+                payload.min_api_version = minApiVersion;
             }
-
-            if(thumbnailUrl != null && thumbnailUrl != "") {
-            payload.thumbnail = thumbnailUrl;
+            if (thumbnailUrl != null && thumbnailUrl != "") {
+                payload.thumbnail = thumbnailUrl;
             }
-
             mc.setPayloadJSON(payload);
          ]]>
         </script>

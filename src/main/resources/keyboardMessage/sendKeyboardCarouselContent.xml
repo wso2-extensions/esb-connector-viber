@@ -46,12 +46,12 @@
                 "type":"$2",
                 "min_api_version":2,
                 "rich_media":{
-                "Type":"rich_media",
-                "Buttons":$3
+                    "Type":"rich_media",
+                    "Buttons":$3
                 },
                 "keyboard":{
-                "Type":"keyboard",
-                "Buttons":$4
+                    "Type":"keyboard",
+                    "Buttons":$4
                 }
                 }
             </format>
@@ -72,28 +72,23 @@
             var buttonsGroupRows = mc.getProperty('uri.var.buttonsGroupRows');
             var buttonsGroupColumns = mc.getProperty('uri.var.buttonsGroupColumns');
 
-            if(bgColor != null && bgColor != "") {
-            payload.keyboard.BgColor = bgColor;
+            if (bgColor != null && bgColor != "") {
+                payload.keyboard.BgColor = bgColor;
             }
-
-            if(defaultHeight != null && defaultHeight != "") {
-            payload.keyboard.DefaultHeight = defaultHeight;
+            if (defaultHeight != null && defaultHeight != "") {
+                payload.keyboard.DefaultHeight = defaultHeight;
             }
-
-            if(customDefaultHeigh != null && customDefaultHeigh != "") {
-            payload.keyboard.CustomDefaultHeigh = customDefaultHeigh;
+            if (customDefaultHeigh != null && customDefaultHeigh != "") {
+                payload.keyboard.CustomDefaultHeigh = customDefaultHeigh;
             }
-
-            if(backGroundColor != null && backGroundColor != "") {
-            payload.rich_media.BgColor = backGroundColor;
+            if (backGroundColor != null && backGroundColor != "") {
+                payload.rich_media.BgColor = backGroundColor;
             }
-
-            if( uttonsGroupRows != null && buttonsGroupRows != "") {
-            payload.rich_media.ButtonsGroupRows = buttonsGroupRows;
+            if (buttonsGroupRows != null && buttonsGroupRows != "") {
+                payload.rich_media.ButtonsGroupRows = buttonsGroupRows;
             }
-
-            if(buttonsGroupColumns != null && buttonsGroupColumns != "") {
-            payload.rich_media.ButtonsGroupColumns = buttonsGroupColumns;
+            if (buttonsGroupColumns != null && buttonsGroupColumns != "") {
+                payload.rich_media.ButtonsGroupColumns = buttonsGroupColumns;
             }
             mc.setPayloadJSON(payload);
          ]]>

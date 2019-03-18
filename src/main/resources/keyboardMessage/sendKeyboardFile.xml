@@ -46,11 +46,10 @@
                 "size":$4,
                 "file_name":"$5",
                 "keyboard":{
-                "Type":"keyboard",
-                "Buttons":$6
+                    "Type":"keyboard",
+                    "Buttons":$6
                 }
                 }
-
             </format>
             <args>
                 <arg expression="$.receiver" evaluator="json"/>
@@ -68,18 +67,15 @@
             var defaultHeight = mc.getProperty('uri.var.defaultHeight');
             var customDefaultHeigh = mc.getProperty('uri.var.customDefaultHeigh');
 
-            if(bgColor != null && bgColor != "") {
-            payload.keyboard.BgColor = bgColor;
+            if (bgColor != null && bgColor != "") {
+                payload.keyboard.BgColor = bgColor;
             }
-
-            if(defaultHeight != null && defaultHeight != "") {
-            payload.keyboard.DefaultHeight = defaultHeight;
+            if (defaultHeight != null && defaultHeight != "") {
+                payload.keyboard.DefaultHeight = defaultHeight;
             }
-
-            if(customDefaultHeigh != null && customDefaultHeigh != "") {
-            payload.keyboard.CustomDefaultHeigh = customDefaultHeigh;
+            if (customDefaultHeigh != null && customDefaultHeigh != "") {
+                payload.keyboard.CustomDefaultHeigh = customDefaultHeigh;
             }
-
             mc.setPayloadJSON(payload);
          ]]>
         </script>
