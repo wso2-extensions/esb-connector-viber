@@ -1,0 +1,9 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver": "%s(user1)",
+  "senderName": "%s(senderName)",
+  "type": "location",
+  "latitude": "%s(latitude)",
+  "longitude": "%s(longitude)"
+}

@@ -1,0 +1,9 @@
+{
+  "receiver": "%s(user1)",
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "video",
+  "media": "%s(mediaUrlVideo)",
+  "size": "%s(size)"
+}

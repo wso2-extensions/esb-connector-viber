@@ -1,0 +1,12 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "senderName": "%s(senderName)",
+  "type": "picture",
+  "text": "%s(pictureText)",
+  "mediaUrlPicture": "%s(mediaUrlPicture)",
+  "ids": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

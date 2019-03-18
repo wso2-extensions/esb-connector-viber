@@ -1,0 +1,14 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "location",
+  "location": {
+    "lat": "%s(latitude)",
+    "lon": "%s(longitude)"
+  },
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

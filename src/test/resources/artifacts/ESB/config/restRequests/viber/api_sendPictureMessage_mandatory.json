@@ -1,0 +1,9 @@
+{
+  "receiver": "%s(user1)",
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "picture",
+  "text": "%s(pictureText)",
+  "media": "%s(mediaUrlPicture)"
+}

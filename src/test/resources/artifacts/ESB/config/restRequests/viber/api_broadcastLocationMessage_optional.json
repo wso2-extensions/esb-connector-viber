@@ -1,0 +1,17 @@
+{
+  "sender": {
+    "name": "%s(senderName)",
+    "avatar": "%s(senderAvatarUrl)"
+  },
+  "min_api_version": "%s(minApiVersion)",
+  "tracking_data": "%s(trackingData)",
+  "type": "location",
+  "location": {
+    "lat": "%s(latitude)",
+    "lon": "%s(longitude)"
+  },
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

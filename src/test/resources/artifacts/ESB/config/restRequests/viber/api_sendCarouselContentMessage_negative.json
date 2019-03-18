@@ -1,0 +1,13 @@
+{
+  "type": "rich_media",
+  "min_api_version": 2,
+  "BgColor": "%s(backGroundColor)",
+  "ButtonsGroupRows": "%s(buttonsGroupRows)",
+  "ButtonsGroupColumns": "%s(buttonsGroupColumns)",
+  "rich_media": {
+    "type": "rich_media",
+    "Buttons": [
+      %s(richMediaButtons)
+  ]
+  }
+}

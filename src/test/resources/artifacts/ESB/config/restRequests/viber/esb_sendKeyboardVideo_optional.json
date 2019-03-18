@@ -1,0 +1,14 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver":"%s(user1)",
+  "type": "video",
+  "bgColor": "%s(bgColor)",
+  "defaultHeight": "%s(defaultHeight)",
+  "customDefaultHeigh": "%s(customDefaultHeigh)",
+  "mediaUrlVideo": "%s(mediaUrlVideo)",
+  "size": "%s(size)",
+  "buttons": [
+    %s(buttons)
+]
+}

@@ -1,0 +1,16 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "ids": [
+    "%s(user1)",
+    "%s(user2)"
+  ],
+  "senderName":"%s(senderName)",
+  "senderAvatarUrl": "%s(senderAvatarUrl)",
+  "mediaUrlVideo": "%s(mediaUrlVideo)",
+  "thumbnailUrl": "%s(thumbnailUrl)",
+  "minApiVersion": "%s(minApiVersion)",
+  "trackingData": "%s(trackingData)",
+  "duration": "%s(duration)",
+  "size": "%s(size)"
+}

@@ -1,0 +1,14 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver": "%s(user1)",
+  "type": "picture",
+  "text": "%s(pictureText)",
+  "bgColor": "%s(bgColor)",
+  "defaultHeight": "%s(defaultHeight)",
+  "customDefaultHeigh": "%s(customDefaultHeigh)",
+  "mediaUrlPicture": "%s(mediaUrlPicture)",
+  "buttons": [
+    %s(buttons)
+]
+}

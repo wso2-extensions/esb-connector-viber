@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ you may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<template xmlns="http://ws.apache.org/ns/synapse" name="sendFileMessage">
+    <parameter name="receiver" description="Unique viber user id"/>
+    <parameter name="senderName" description="The sender's name to display"/>
+    <parameter name="type" description="Type of the message"/>
+    <parameter name="mediaUrlFile" description="The url of the file"/>
+    <parameter name="size" description="Size of the file"/>
+    <parameter name="fileName" description="Name of the file"/>
+    <parameter name="senderAvatarUrl" description="The sender’s avatar URL"/>
+    <parameter name="trackingData" description="Allow the account to track messages and user’s replies"/>
+    <parameter name="minApiVersion" description="Minimal API version required by clients for this message"/>
+    <sequence>
+        <property name="uri.var.receiver" expression="$func:receiver"/>
+        <property name="uri.var.senderName" expression="$func:senderName"/>
+        <property name="uri.var.type" expression="$func:type"/>
+        <property name="uri.var.mediaUrlFile" expression="$func:mediaUrlFile"/>
+        <property name="uri.var.size" expression="$func:size"/>
+        <property name="uri.var.fileName" expression="$func:fileName"/>
+        <property name="uri.var.senderAvatarUrl" expression="$func:senderAvatarUrl"/>
+        <property name="uri.var.trackingData" expression="$func:trackingData"/>
+        <property name="uri.var.minApiVersion" expression="$func:minApiVersion"/>
+        <payloadFactory media-type="json">
+            <format>
+                {
+                "receiver":"$1",
+                "sender":{
+                    "name":"$2"
+                },
+                "type":"$3",
+                "media":"$4",
+                "size":$5,
+                "file_name":"$6"
+                }
+            </format>
+            <args>
+                <arg expression="$.receiver" evaluator="json"/>
+                <arg expression="$.senderName" evaluator="json"/>
+                <arg expression="$.type" evaluator="json"/>
+                <arg expression="$.mediaUrlFile" evaluator="json"/>
+                <arg expression="$.size" evaluator="json"/>
+                <arg expression="$.fileName" evaluator="json"/>
+            </args>
+        </payloadFactory>
+        <script language="js">
+            <![CDATA[
+            payload = mc.getPayloadJSON();
+            var senderAvatarUrl = mc.getProperty("uri.var.senderAvatarUrl");
+            var trackingData = mc.getProperty("uri.var.trackingData");
+            var minApiVersion = mc.getProperty("uri.var.minApiVersion");
+
+            if (senderAvatarUrl!= null && senderAvatarUrl != "") {
+                payload.sender.avatar = senderAvatarUrl;
+            }
+            if (trackingData != null && trackingData != "") {
+                payload.tracking_data = trackingData;
+            }
+            if (minApiVersion != null && minApiVersion != "") {
+                payload.min_api_version = minApiVersion;
+            }
+            mc.setPayloadJSON(payload);
+         ]]>
+        </script>
+        <call>
+            <endpoint>
+                <http method="POST" uri-template="{uri.var.apiUrl}/pa/send_message"/>
+            </endpoint>
+        </call>
+    </sequence>
+</template>

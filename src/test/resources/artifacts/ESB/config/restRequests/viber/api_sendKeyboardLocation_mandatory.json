@@ -1,0 +1,14 @@
+{
+  "receiver": "%s(user1)",
+  "type": "location",
+  "location": {
+    "lat": "%s(latitude)",
+    "lon": "%s(longitude)"
+  },
+  "keyboard": {
+    "Type": "keyboard",
+    "Buttons": [
+      %s(buttons)
+  ]
+  }
+}

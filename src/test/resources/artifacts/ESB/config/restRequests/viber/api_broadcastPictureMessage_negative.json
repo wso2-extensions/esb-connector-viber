@@ -1,0 +1,15 @@
+{
+  "sender": {
+    "name": "%s(senderName)",
+    "avatar": "%s(senderAvatarUrl"
+  },
+  "type": "picture",
+  "text": "%s(pictureText)",
+  "min_api_version": "%s(minApiVersion)",
+  "tracking_data": "%s(trackingData)",
+  "thumbnail": "%s(thumbnailUrl)",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "receiver": "%s(user1)",
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "url",
+  "media": "%s(mediaUrl)"
+}

@@ -1,0 +1,15 @@
+{
+  "receiver": "%s(user1)",
+  "type": "picture",
+  "text": "%s(pictureText)",
+  "media": "%s(mediaUrlPicture)",
+  "keyboard": {
+    "Type": "keyboard",
+    "BgColor": "%s(bgColor)",
+    "DefaultHeight": "%s(defaultHeight)",
+    "CustomDefaultHeigh": "%s(customDefaultHeigh)",
+    "Buttons": [
+      %s(buttons)
+  ]
+  }
+}

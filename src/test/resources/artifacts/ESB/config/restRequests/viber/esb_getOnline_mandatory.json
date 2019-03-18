@@ -1,0 +1,8 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "ids": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

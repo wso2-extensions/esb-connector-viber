@@ -1,0 +1,8 @@
+{
+  "receiver": "%s(user1)",
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "text",
+  "text": "%s(text)"
+}

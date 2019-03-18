@@ -1,0 +1,14 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "type": "file",
+  "mediaUrlFile": "%s(mediaUrlFile)",
+  "size": "%s(fileSize)",
+  "bgColor": "%s(bgColor)",
+  "defaultHeight": "%s(defaultHeight)",
+  "customDefaultHeigh": "%s(customDefaultHeigh)",
+  "fileName": "%s(fileName)",
+  "buttons": [
+    %s(buttons)
+]
+}

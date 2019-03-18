@@ -1,0 +1,13 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "file",
+  "media": "%s(mediaUrlFile)",
+  "size": "%s(fileSize)",
+  "file_name": "%s(fileName)",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

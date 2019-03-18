@@ -1,0 +1,18 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver": "%s(user1)",
+  "type": "rich_media",
+  "backGroundColor": "%s(backGroundColor)",
+  "buttonsGroupRows": "%s(buttonsGroupRows)",
+  "buttonsGroupColumns": "%s(buttonsGroupColumns)",
+  "bgColor": "%s(bgColor)",
+  "defaultHeight": "%s(defaultHeight)",
+  "customDefaultHeigh": "%s(customDefaultHeigh)",
+  "richMediaButtons": [
+    %s(richMediaButtons)
+],
+  "buttons": [
+    %s(buttons)
+]
+}

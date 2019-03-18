@@ -1,0 +1,11 @@
+{
+  "receiver":"%s(user1)",
+  "type": "url",
+  "media": "%s(mediaUrl)",
+  "keyboard": {
+    "Type": "keyboard",
+    "Buttons": [
+      %s(buttons)
+  ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "receiver": "%s(user1)",
+  "type": "picture",
+  "text": "%s(pictureText)",
+  "mediaUrlPicture": "%s(mediaUrlPicture)",
+  "senderAvatarUrl": "%s(senderAvatarUrl)",
+  "trackingData": "%s(trackingData)",
+  "minApiVersion": "%s(minApiVersion)",
+  "thumbnailUrl": "%s(thumbnailUrl)"
+}

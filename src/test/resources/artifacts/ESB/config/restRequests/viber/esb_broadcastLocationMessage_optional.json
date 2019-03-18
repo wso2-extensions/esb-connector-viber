@@ -1,0 +1,15 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "appKey": "%s(appKey)",
+  "senderName": "%s(senderName)",
+  "ids": [
+    "%s(user1)",
+    "%s(user2)"
+  ],
+  "type": "location",
+  "latitude": "%s(latitude)",
+  "longitude": "%s(longitude)",
+  "senderAvatarUrl": "%s(senderAvatarUrl)",
+  "trackingData": "%s(trackingData)",
+  "minApiVersion": "%s(minApiVersion)"
+}

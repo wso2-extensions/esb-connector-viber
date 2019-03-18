@@ -1,0 +1,14 @@
+{
+  "receiver": "%s(user1)",
+  "type": "rich_media",
+  "min_api_version": 2,
+  "ButtonsGroupColumns": "%s(buttonsGroupColumns)",
+  "rich_media": {
+    "type": "rich_media",
+    "BgColor": "%s(backGroundColor)",
+    "ButtonsGroupRows": "%s(buttonsGroupRows)",
+    "Buttons": [
+      %s(richMediaButtons)
+  ]
+  }
+}

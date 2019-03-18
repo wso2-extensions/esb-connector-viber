@@ -1,0 +1,12 @@
+{
+  "sender": {
+    "name": "%s(senderName)"
+  },
+  "type": "picture",
+  "text": "%s(pictureText)",
+  "media": "%s(mediaUrlPicture)",
+  "broadcast_list": [
+    "%s(user1)",
+    "%s(user2)"
+  ]
+}

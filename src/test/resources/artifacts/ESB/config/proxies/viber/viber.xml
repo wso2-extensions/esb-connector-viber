@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ you may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="viber"
+       transports="https,http"
+       statistics="disable"
+       trace="disable"
+       startOnLoad="true">
+    <target>
+        <inSequence>
+            <property name="appKey" expression="json-eval($.appKey)"/>
+            <property name="apiUrl" expression="json-eval($.apiUrl)"/>
+            <property name="receiver" expression="json-eval($.receiver)"/>
+            <property name="senderName" expression="json-eval($.senderName)"/>
+            <property name="id" expression="json-eval($.id)"/>
+            <property name="ids" expression="json-eval($.ids)"/>
+            <property name="text" expression="json-eval($.text)"/>
+            <property name="type" expression="json-eval($.type)"/>
+            <property name="size" expression="json-eval($.size)"/>
+            <property name="mediaUrlPicture" expression="json-eval($.mediaUrlPicture)"/>
+            <property name="mediaUrlFile" expression="json-eval($.mediaUrlFile)"/>
+            <property name="mediaUrlVideo" expression="json-eval($.mediaUrlVideo)"/>
+            <property name="mediaUrl" expression="json-eval($.mediaUrl)"/>
+            <property name="buttons" expression="json-eval($.buttons)"/>
+            <property name="duration" expression="json-eval($.duration)"/>
+            <property name="stickerId" expression="json-eval($.stickerId)"/>
+            <property name="latitude" expression="json-eval($.latitude)"/>
+            <property name="longitude" expression="json-eval($.longitude)"/>
+            <property name="contactName" expression="json-eval($.contactName)"/>
+            <property name="contactNumber" expression="json-eval($.contactNumber)"/>
+            <property name="fileName" expression="json-eval($.fileName)"/>
+            <property name="richMediaButtons" expression="json-eval($.richMediaButtons)"/>
+            <property name="senderAvatarUrl" expression="json-eval($.senderAvatarUrl)"/>
+            <property name="trackingData" expression="json-eval($.trackingData)"/>
+            <property name="minApiVersion" expression="json-eval($.minApiVersion)"/>
+            <property name="thumbnailUrl" expression="json-eval($.thumbnailUrl)"/>
+            <property name="bgColor" expression="json-eval($.bgColor)"/>
+            <property name="backGroundColor" expression="json-eval($.backGroundColor)"/>
+            <property name="defaultHeight" expression="json-eval($.defaultHeight)"/>
+            <property name="customDefaultHeigh" expression="json-eval($.customDefaultHeigh)"/>
+            <property name="buttonsGroupRows" expression="json-eval($.buttonsGroupRows)"/>
+            <property name="buttonsGroupColumns" expression="json-eval($.buttonsGroupColumns)"/>
+            <viber.init>
+                <apiUrl>{$ctx:apiUrl}</apiUrl>
+                <appKey>{$ctx:appKey}</appKey>
+            </viber.init>
+            <switch source="get-property('transport', 'Action')">
+                <case regex="urn:sendTextMessage">
+                    <viber.sendTextMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <text>{$ctx:text}</text>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                    </viber.sendTextMessage>
+                </case>
+                <case regex="urn:sendPictureMessage">
+                    <viber.sendPictureMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <text>{$ctx:text}</text>
+                        <mediaUrlPicture>{$ctx:mediaUrlPicture}</mediaUrlPicture>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <thumbnailUrl>{$ctx:thumbnailUrl}</thumbnailUrl>
+                    </viber.sendPictureMessage>
+                </case>
+                <case regex="urn:sendVideoMessage">
+                    <viber.sendVideoMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <mediaUrlVideo>{$ctx:mediaUrlVideo}</mediaUrlVideo>
+                        <size>{$ctx:size}</size>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <thumbnailUrl>{$ctx:thumbnailUrl}</thumbnailUrl>
+                        <duration>{$ctx:duration}</duration>
+                    </viber.sendVideoMessage>
+                </case>
+                <case regex="urn:sendUrlMessage">
+                    <viber.sendUrlMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <mediaUrl>{$ctx:mediaUrl}</mediaUrl>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                    </viber.sendUrlMessage>
+                </case>
+                <case regex="urn:sendStickerMessage">
+                    <viber.sendStickerMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <stickerId>{$ctx:stickerId}</stickerId>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                    </viber.sendStickerMessage>
+                </case>
+                <case regex="urn:sendLocationMessage">
+                    <viber.sendLocationMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <latitude>{$ctx:latitude}</latitude>
+                        <longitude>{$ctx:longitude}</longitude>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                    </viber.sendLocationMessage>
+                </case>
+                <case regex="urn:sendFileMessage">
+                    <viber.sendFileMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <mediaUrlFile>{$ctx:mediaUrlFile}</mediaUrlFile>
+                        <size>{$ctx:size}</size>
+                        <fileName>{$ctx:fileName}</fileName>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                    </viber.sendFileMessage>
+                </case>
+                <case regex="urn:sendContactMessage">
+                    <viber.sendContactMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <contactName>{$ctx:contactName}</contactName>
+                        <contactNumber>{$ctx:contactNumber}</contactNumber>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                    </viber.sendContactMessage>
+                </case>
+                <case regex="urn:sendCarouselContentMessage">
+                    <viber.sendCarouselContentMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <richMediaButtons>{$ctx:richMediaButtons}</richMediaButtons>
+                        <backGroundColor>{$ctx:backGroundColor}</backGroundColor>
+                        <buttonsGroupRows>{$ctx:buttonsGroupRows}</buttonsGroupRows>
+                        <buttonsGroupColumns>{$ctx:buttonsGroupColumns}</buttonsGroupColumns>
+                    </viber.sendCarouselContentMessage>
+                </case>
+                <case regex="urn:getUserDetails">
+                    <viber.getUserDetails>
+                        <id>{$ctx:id}</id>
+                    </viber.getUserDetails>
+                </case>
+                <case regex="urn:getOnline">
+                    <viber.getOnline>
+                        <ids>{$ctx:ids}</ids>
+                    </viber.getOnline>
+                </case>
+                <case regex="urn:getAccountInfo">
+                    <viber.getAccountInfo/>
+                </case>
+                <case regex="urn:broadcastCarouselContentMessage">
+                    <viber.broadcastCarouselContentMessage>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <richMediaButtons>{$ctx:richMediaButtons}</richMediaButtons>
+                        <backGroundColor>{$ctx:backGroundColor}</backGroundColor>
+                        <buttonsGroupColumns>{$ctx:buttonsGroupColumns}</buttonsGroupColumns>
+                        <buttonsGroupRows>{$ctx:buttonsGroupRows}</buttonsGroupRows>
+                    </viber.broadcastCarouselContentMessage>
+                </case>
+                <case regex="urn:broadcastContactMessage">
+                    <viber.broadcastContactMessage>
+                        <ids>{$ctx:ids}</ids>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <contactName>{$ctx:contactName}</contactName>
+                        <contactNumber>{$ctx:contactNumber}</contactNumber>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                    </viber.broadcastContactMessage>
+                </case>
+                <case regex="urn:broadcastFileMessage">
+                    <viber.broadcastFileMessage>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <mediaUrlFile>{$ctx:mediaUrlFile}</mediaUrlFile>
+                        <size>{$ctx:size}</size>
+                        <fileName>{$ctx:fileName}</fileName>
+                        <ids>{$ctx:ids}</ids>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                    </viber.broadcastFileMessage>
+                </case>
+                <case regex="urn:broadcastLocationMessage">
+                    <viber.broadcastLocationMessage>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <ids>{$ctx:ids}</ids>
+                        <type>{$ctx:type}</type>
+                        <latitude>{$ctx:latitude}</latitude>
+                        <longitude>{$ctx:longitude}</longitude>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                    </viber.broadcastLocationMessage>
+                </case>
+                <case regex="urn:broadcastPictureMessage">
+                    <viber.broadcastPictureMessage>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <ids>{$ctx:ids}</ids>
+                        <text>{$ctx:text}</text>
+                        <type>{$ctx:type}</type>
+                        <mediaUrlPicture>{$ctx:mediaUrlPicture}</mediaUrlPicture>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <thumbnailUrl>{$ctx:thumbnailUrl}</thumbnailUrl>
+                    </viber.broadcastPictureMessage>
+                </case>
+                <case regex="urn:broadcastStickerMessage">
+                    <viber.broadcastStickerMessage>
+                        <ids>{$ctx:ids}</ids>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <stickerId>{$ctx:stickerId}</stickerId>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                    </viber.broadcastStickerMessage>
+                </case>
+                <case regex="urn:broadcastTextMessage">
+                    <viber.broadcastTextMessage>
+                        <ids>{$ctx:ids}</ids>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <text>{$ctx:text}</text>
+                        <type>{$ctx:type}</type>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                    </viber.broadcastTextMessage>
+                </case>
+                <case regex="urn:broadcastUrlMessage">
+                    <viber.broadcastUrlMessage>
+                        <ids>{$ctx:ids}</ids>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <type>{$ctx:type}</type>
+                        <mediaUrl>{$ctx:mediaUrl}</mediaUrl>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                    </viber.broadcastUrlMessage>
+                </case>
+                <case regex="urn:broadcastVideoMessage">
+                    <viber.broadcastVideoMessage>
+                        <ids>{$ctx:ids}</ids>
+                        <senderName>{$ctx:senderName}</senderName>
+                        <size>{$ctx:size}</size>
+                        <type>{$ctx:type}</type>
+                        <mediaUrlVideo>{$ctx:mediaUrlVideo}</mediaUrlVideo>
+                        <senderAvatarUrl>{$ctx:senderAvatarUrl}</senderAvatarUrl>
+                        <trackingData>{$ctx:trackingData}</trackingData>
+                        <minApiVersion>{$ctx:minApiVersion}</minApiVersion>
+                        <thumbnailUrl>{$ctx:thumbnailUrl}</thumbnailUrl>
+                        <duration>{$ctx:duration}</duration>
+                    </viber.broadcastVideoMessage>
+                </case>
+                <case regex="urn:sendKeyboardVideo">
+                    <viber.sendKeyboardVideo>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <mediaUrlVideo>{$ctx:mediaUrlVideo}</mediaUrlVideo>
+                        <size>{$ctx:size}</size>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardVideo>
+                </case>
+                <case regex="urn:sendKeyboardUrl">
+                    <viber.sendKeyboardUrl>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <mediaUrl>{$ctx:mediaUrl}</mediaUrl>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardUrl>
+                </case>
+                <case regex="urn:sendKeyboardSticker">
+                    <viber.sendKeyboardSticker>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <stickerId>{$ctx:stickerId}</stickerId>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardSticker>
+                </case>
+                <case regex="urn:sendKeyboardPicture">
+                    <viber.sendKeyboardPicture>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <text>{$ctx:text}</text>
+                        <mediaUrlPicture>{$ctx:mediaUrlPicture}</mediaUrlPicture>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardPicture>
+                </case>
+                <case regex="urn:sendKeyboardLocation">
+                    <viber.sendKeyboardLocation>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <latitude>{$ctx:latitude}</latitude>
+                        <longitude>{$ctx:longitude}</longitude>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardLocation>
+                </case>
+                <case regex="urn:sendKeyboardFile">
+                    <viber.sendKeyboardFile>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <mediaUrlFile>{$ctx:mediaUrlFile}</mediaUrlFile>
+                        <size>{$ctx:size}</size>
+                        <fileName>{$ctx:fileName}</fileName>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardFile>
+                </case>
+                <case regex="urn:sendKeyboardContact">
+                    <viber.sendKeyboardContact>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <contactName>{$ctx:contactName}</contactName>
+                        <contactNumber>{$ctx:contactNumber}</contactNumber>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardContact>
+                </case>
+                <case regex="urn:sendKeyboardText">
+                    <viber.sendKeyboardText>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <text>{$ctx:text}</text>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                    </viber.sendKeyboardText>
+                </case>
+                <case regex="urn:sendKeyboardCarouselContent">
+                    <viber.sendKeyboardCarouselContent>
+                        <receiver>{$ctx:receiver}</receiver>
+                        <type>{$ctx:type}</type>
+                        <richMediaButtons>{$ctx:richMediaButtons}</richMediaButtons>
+                        <buttons>{$ctx:buttons}</buttons>
+                        <bgColor>{$ctx:bgColor}</bgColor>
+                        <defaultHeight>{$ctx:defaultHeight}</defaultHeight>
+                        <customDefaultHeigh>{$ctx:customDefaultHeigh}</customDefaultHeigh>
+                        <backGroundColor>{$ctx:backGroundColor}</backGroundColor>
+                        <buttonsGroupRows>{$ctx:buttonsGroupRows}</buttonsGroupRows>
+                        <buttonsGroupColumns>{$ctx:buttonsGroupColumns}</buttonsGroupColumns>
+                    </viber.sendKeyboardCarouselContent>
+                </case>
+            </switch>
+            <respond/>
+        </inSequence>
+    </target>
+    <description/>
+</proxy>

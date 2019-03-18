@@ -1,0 +1,10 @@
+{
+  "min_api_version": "%s(minApiVersion)",
+  "sender": {
+    "name": "%s(senderName)",
+    "avatar": "%s(senderAvatarUrl)"
+  },
+  "type": "url",
+  "media": "%s(mediaUrl)",
+  "tracking_data": "%s(trackingData)"
+}
