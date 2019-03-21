@@ -41,12 +41,12 @@
                 "receiver":"$1",
                 "type":"$2",
                 "location":{
-                "lat":"$3",
-                "lon":"$4"
+                    "lat":"$3",
+                    "lon":"$4"
                 },
                 "keyboard":{
-                "Type":"keyboard",
-                "Buttons":$5
+                     "Type":"keyboard",
+                     "Buttons":$5
                 }
                 }
             </format>
