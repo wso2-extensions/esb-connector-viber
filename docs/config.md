@@ -40,7 +40,6 @@ Add the following <viber.init> method in your configuration:
 
 Now that you have connected to viber, use the information in the following topics to perform various operations with the connector.
 
-* To work with webhook, See [Working with webhook](webhook.md).
 * To work with broadcastMessage, See [Working with broadcast message](broadcastMessage.md).
 * To work with accountInfo, See [Working with  account info](accountInfo.md).
 * To work with onlineStatus, see [Working with online status](onlineStatus.md).
