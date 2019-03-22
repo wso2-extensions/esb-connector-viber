@@ -1,4 +1,4 @@
-#Viber EI Connector
+# Viber EI Connector
 
 The Viber [connector](https://docs.wso2.com/display/EI640/Working+with+Connectors)  allows you for send messages,broadcast messages, get online details, get user details, and get account information.
 It allows you to access the [Viber REST API](https://developers.viber.com/docs/api/rest-bot-api/) through WSO2 Enterprise Integrator (WSO2 EI).
