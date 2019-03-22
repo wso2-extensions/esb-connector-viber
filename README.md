@@ -1,7 +1,6 @@
 # Viber EI Connector
 
-The Viber [connector](https://docs.wso2.com/display/EI640/Working+with+Connectors) is a free to download app that allows users to make free calls and send messages to other Viber users .It works on both mobile and computer and can
-be used to connect with people around the world.
+The Viber [connector](https://docs.wso2.com/display/EI640/Working+with+Connectors) allows you for send messages,broadcast messages, get online details, get user details, and get account information.  
 It allows you to access the [Viber REST API](https://developers.viber.com/docs/api/rest-bot-api/) through WSO2 Enterprise Integrator (WSO2 EI).
 
 
@@ -9,7 +8,7 @@ It allows you to access the [Viber REST API](https://developers.viber.com/docs/a
 
 | Connector Version | Viber API Version | Supported WSO2 EI Version |
 | ------------- | ------------- | ------------- |
-| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/releases/tag/org.wso2.carbon.esb.connector.viber-1.0.0)  | V7.3.0| ESB 6.4.0 |
+| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/releases/tag/org.wso2.carbon.esb.connector.viber-1.0.0)  | V7.3.0| EI 6.4.0 |
 
 ## Getting started
 
