@@ -8,7 +8,7 @@ It allows you to access the [Viber REST API](https://developers.viber.com/docs/a
 
 | Connector Version | Viber API Version | Supported WSO2 EI Version |
 | ------------- | ------------- | ------------- |
-| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/releases/tag/org.wso2.carbon.esb.connector.viber-1.0.0)  | V7.3.0| EI 6.4.0 |
+| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/tree/org.wso2.carbon.esb.connector.viber-1.0.0)  | V7.3.0| EI 6.4.0 |
 
 ## Getting started
 
