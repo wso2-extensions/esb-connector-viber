@@ -7,7 +7,7 @@ The Viber [connector](https://docs.wso2.com/display/EI640/Working+with+Connector
 
 | Connector Version | Viber API Version | Supported WSO2 EI Version |
 | ------------- | ------------- | ------------- |
-| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/releases/tag/org.wso2.carbon.esb.connector.viber-1.0.0)  | V7.3.0| EI 6.4.0 |
+| [1.0.0](https://github.com/wso2-extensions/esb-connector-viber/tree/org.wso2.carbon.esb.connector.viber-1.0.0)  | V7.3.0| EI 6.4.0 |
 
 ## Getting started
 
@@ -34,4 +34,3 @@ If you want to build viber connector from the source code:
 
 As an open source project, WSO2 extensions welcome contributions from the community.
 Check the [issue tracker](https://github.com/wso2-extensions/esb-connector-viber/issues) for open issues that interest you. We look forward to receiving your contributions.
-
