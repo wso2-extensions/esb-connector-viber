@@ -21,7 +21,7 @@ It allows you to access the [Viber REST API](https://developers.viber.com/docs/a
 
 #### Configuring the connector operations
 
-To get started with viber connector and their operations, see [Configuring Viber Connector  Operations](/home/sarangika/Desktop/PR/esb-connector-viber/docs/config.md).
+To get started with viber connector and their operations, see [Configuring Viber Connector  Operations](docs/config.md).
 
 ## Building From the Source
 
