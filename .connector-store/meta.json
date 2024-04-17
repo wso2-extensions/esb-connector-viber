@@ -6,5 +6,12 @@
     "description": "The Viber connector allows users to make free calls and send messages to other Viber users. It works on both mobile and computer and can be used to connect with people around the world.",
     "status": "Active",
     "labels": [],
-    "releases": []
+    "releases": [
+        {
+            "tagName": "1.0.0",
+            "products": [
+                "EI 6.4.0"
+            ]
+        }
+    ]
 }
