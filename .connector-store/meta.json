@@ -4,7 +4,7 @@
     "category": "Social Media",
     "documentationUrl": "https://github.com/wso2-extensions/esb-connector-viber/blob/release-1.0.0/README.md",
     "description": "The Viber connector allows users to make free calls and send messages to other Viber users. It works on both mobile and computer and can be used to connect with people around the world.",
-    "status": "Active",
+    "status": "Inactive",
     "labels": [
         "communication"
     ],
